@@ -15,7 +15,7 @@ while (begin !== true){
 }
 //Question 3
 var hero = prompt('Which do I prefer, DC or Marvel?').toLowerCase();
-if ( hero === 'DC'){
+if ( hero === 'dc'){
     alert(' Correct');
     console.log('You choose wisely' + hero);
 } else{
