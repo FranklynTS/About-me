@@ -17,37 +17,51 @@ while (begin !== true){
  }
 
 //Question 3
-var hero = prompt('Which do I prefer, DC or Marvel?').toLowerCase();
-if ( hero === 'dc'){
-     tally ++
-    alert(' Correct');
-    console.log('You choose wisely ' + hero);
-} else{
-    alert(' Sorry wrong choice');
-    console.log('Sorry wrong choice');
-}
-//question 4
-var weather = prompt('Do I prefer Summer or Winter').toLowerCase();
-if ( weather === 'winter'){
-     tally ++
-    alert('Correct');
-    console.log('Correct');
-} else {
-    alert('Close but not quite');
-    console.log('Close but not quite');
-}
-//question 5
-var comp = prompt('Do I use an Apple or PC?').toLowerCase();
-if (comp === 'pc'){
-     tally ++
-    alert('You are correct');
-    console.log('You are correct');
-}else{
-    alert('Never an Apple!');
-    console.log('Never an Apple');
+function question (promptMessage, correctAnswer, alertMessage) {
+
+    var input = prompt( promptMessage ).toLowerCase();
+     if ( input === correctAnswer){
+        tally ++
+        alert('Correct!');
+        console.log('Correct!');
+    } else{
+        alert( alertMessage);
+        console.log( alertMessage);
+    }
+
 }
 
-//Question 6
+question('Which do I prefer, DC or Marvel?', 'dc', 'Sorry wrong choice');
+
+question('Do I prefer summer or winter', 'winter', 'Close but not quite');
+
+question('Do I use Apple or PC?', 'PC', 'Never an Apple!');
+
+//question 4
+
+// var weather = prompt('Do I prefer Summer or Winter').toLowerCase();
+// if ( weather === 'winter'){
+//      tally ++
+//     alert('Correct');
+//     console.log('Correct');
+// } else {
+//     alert('Close but not quite');
+//     console.log('Close but not quite');
+// }
+
+
+// //question 5
+// var comp = prompt('Do I use an Apple or PC?').toLowerCase();
+// if (comp === 'pc'){
+//      tally ++
+//     alert('You are correct');
+//     console.log('You are correct');
+// }else{
+//     alert('Never an Apple!');
+//     console.log('Never an Apple');
+// }
+
+// //Question 6
 
 for ( var i = 0; i < 3; i ++ ) {
     var age = prompt('How old am I?');
@@ -65,6 +79,7 @@ for ( var i = 0; i < 3; i ++ ) {
     }
 }
 
+// Question 7
 var stateArr = [ 'arizona', 'nevada', 'oregon', 'florida' ];
 for ( var i = 0; i < 6; i ++ ) {
     var answer = prompt(" What States have I lived in? There are 4 answers").toLowerCase();
