@@ -1,8 +1,13 @@
 /* style sheet  */
 
      body{
-        color: blue;
+        color: white;
         background: gray;
         font-size: 40px ;
 
      }  
+    h4{
+        color: black;
+        font-family: Arial;
+      
+    }
