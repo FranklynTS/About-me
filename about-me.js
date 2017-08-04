@@ -1,7 +1,7 @@
 alert('Welcome to my game, My name is Franklyn');
 console.log('How much do you know about me?');
 
-var tally = 0
+var tally = 0;
 
 //Question 1
 var name = prompt('What is your name?');
@@ -9,33 +9,42 @@ console.log('Hello ' + name);
 alert('Hello ' + name);
 
 //Question 2
-var begin = confirm('Would you like to play a game ' + name + '?');
-while (begin !== true){
-    confirm ('Please play ' + name);
-    begin = confirm ('Do you want to play?');
-    console.log(name + ' choose ' + begin );
- }
+// var begin = confirm('Would you like to play a game ' + name + '?');
+// while (!begin){ // !begin
+//     // confirm('Please play ' + name);
+//     begin = confirm('Do you want to play?');
+//     console.log(name + ' choose ' + begin );
+//  }
 
 //Question 3
 function question (promptMessage, correctAnswer, alertMessage) {
 
-    var input = prompt( promptMessage ).toLowerCase();
-     if ( input === correctAnswer){
-        tally ++
+    var input = prompt(promptMessage).toLowerCase();
+     if (input === correctAnswer){
+        tally ++;
         alert('Correct!');
         console.log('Correct!');
-    } else{
-        alert( alertMessage);
-        console.log( alertMessage);
+    } else {
+        alert(alertMessage);
+        console.log(alertMessage);
     }
 
 }
 
-question('Which do I prefer, DC or Marvel?', 'dc', 'Sorry wrong choice');
+var questionsArr = ['Which do I prefer, DC or Marvel?', 'Summer or Winter?', 'Apple or PC?'];
+var correctAnsArr = ['dc', 'winter', 'pc'];
+var messageArr = ['No', 'Nope!', 'Nah'];
 
-question('Do I prefer summer or winter', 'winter', 'Close but not quite');
+for ( var i = 0; i < 3; i ++ ) {
+    console.log( 'question: ', questionsArr[i] );
+    console.log( 'correct answer: ', correctAnsArr[i] );
 
-question('Do I use Apple or PC?', 'PC', 'Never an Apple!');
+    question( questionsArr[i], correctAnsArr[i], messageArr[i] );
+}
+
+// question('Which do I prefer, DC or Marvel?', 'dc', 'Sorry wrong choice');
+// question('Do I prefer summer or winter', 'winter', 'Close but not quite');
+// question('Do I use Apple or PC?', 'PC', 'Never an Apple!');
 
 //question 4
 
@@ -61,36 +70,45 @@ question('Do I use Apple or PC?', 'PC', 'Never an Apple!');
 //     console.log('Never an Apple');
 // }
 
-// //Question 6
-
+// Question 6
 for ( var i = 0; i < 3; i ++ ) {
     var age = prompt('How old am I?');
+    console.log( 'first prompt for age: ', age );
+    
     if (age < 33){
-         age = prompt('too low, try again.');
-    }else if (age > 33){
-        age = prompt('too high, try again');
-    }
-    else{
-        tally ++
+        alert('too low, try again.');
+        console.log( 'too low prompt for age: ', age );
+    } else if (age > 33){
+        alert('too high, try again');
+        console.log( 'too high prompt for age: ', age );
+    } else {
+        tally ++;
         alert( 'You guessed it!');
-         console.log(' You guessed my age, ' + name);
-         break;
-
+        console.log(' You guessed my age, ' + name);
+        break;
     }
+
+    console.log( 'i: ' + i );
+    if (i === 2) {
+        alert( 'you\'re out of guesses!' );
+    } 
 }
 
 // Question 7
 var stateArr = [ 'arizona', 'nevada', 'oregon', 'florida' ];
 for ( var i = 0; i < 6; i ++ ) {
-    var answer = prompt(" What States have I lived in? There are 4 answers").toLowerCase();
-    if ( answer === stateArr[0] || answer === stateArr[1] ||answer === stateArr[2] || answer === stateArr[3] ){
-       tally ++
+    var answer = prompt("What States have I lived in? There are 4 answers").toLowerCase();
+    // "virginia" === "arizona"
+    // if ( stateArr.indexOf( answer ) !== -1 )
+    // if ( stateArr.includes( answer ) )
+    if ( stateArr.includes( answer ) ) {
+        tally ++;
         alert('You guessed it Right.. but you did have 4 correct answers.');
         console.log(' You guessed '  + answer );
         break;
-    } else if (answer !== stateArr) {
+    } else if (answer !== stateArr) { 
+        // "virginia" !== [ 'arizona', 'nevada', 'oregon', 'florida' ]
         alert( 'Choose again please!')
-        
     }
 
 }
