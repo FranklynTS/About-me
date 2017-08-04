@@ -9,27 +9,29 @@ console.log('Hello ' + name);
 alert('Hello ' + name);
 
 //Question 2
-// var begin = confirm('Would you like to play a game ' + name + '?');
-// while (!begin){ // !begin
-//     // confirm('Please play ' + name);
-//     begin = confirm('Do you want to play?');
-//     console.log(name + ' choose ' + begin );
-//  }
 
-//Question 3
-function question (promptMessage, correctAnswer, alertMessage) {
+var begin = confirm('Would you like to play a game ' + name + '?');
+while (!begin){
+    alert('Please play ' + name); //dont need confirm, can use alert or 
+    begin = confirm ('Do you want to play?');
+    console.log(name + ' choose ' + begin );
+ }
 
-    var input = prompt(promptMessage).toLowerCase();
-     if (input === correctAnswer){
-        tally ++;
-        alert('Correct!');
-        console.log('Correct!');
-    } else {
-        alert(alertMessage);
-        console.log(alertMessage);
-    }
 
 }
+// //Question 3 & 4 & 5
+// function question (promptMessage, correctAnswer, alertMessage) {
+
+//     var input = prompt( promptMessage ).toLowerCase();
+//      if ( input === correctAnswer){
+//         tally ++
+//         alert('Correct!');
+//         console.log('Correct!');
+//     } else{
+//         alert( alertMessage);
+//         console.log( alertMessage);
+//     }
+
 
 var questionsArr = ['Which do I prefer, DC or Marvel?', 'Summer or Winter?', 'Apple or PC?'];
 var correctAnsArr = ['dc', 'winter', 'pc'];
@@ -44,6 +46,14 @@ for ( var i = 0; i < 3; i ++ ) {
 
 // question('Which do I prefer, DC or Marvel?', 'dc', 'Sorry wrong choice');
 // question('Do I prefer summer or winter', 'winter', 'Close but not quite');
+
+// }
+
+// question('Which do I prefer, DC or Marvel?', 'dc', 'Sorry wrong choice');
+
+// question('Do I prefer summer or winter', 'winter', 'Close but not quite');
+
+
 // question('Do I use Apple or PC?', 'PC', 'Never an Apple!');
 
 //question 4
@@ -77,39 +87,49 @@ for ( var i = 0; i < 3; i ++ ) {
     
     if (age < 33){
         alert('too low, try again.');
-        console.log( 'too low prompt for age: ', age );
-    } else if (age > 33){
+
+    }else if (age > 33){
         alert('too high, try again');
-        console.log( 'too high prompt for age: ', age );
-    } else {
-        tally ++;
+    }
+    else{
+        tally ++
+
         alert( 'You guessed it!');
         console.log(' You guessed my age, ' + name);
         break;
     }
 
+
     console.log( 'i: ' + i );
     if (i === 2) {
         alert( 'you\'re out of guesses!' );
     } 
-}
+
 
 // Question 7
 var stateArr = [ 'arizona', 'nevada', 'oregon', 'florida' ];
-for ( var i = 0; i < 6; i ++ ) {
-    var answer = prompt("What States have I lived in? There are 4 answers").toLowerCase();
-    // "virginia" === "arizona"
-    // if ( stateArr.indexOf( answer ) !== -1 )
-    // if ( stateArr.includes( answer ) )
-    if ( stateArr.includes( answer ) ) {
-        tally ++;
+
+for ( var i = 0; i < 5; i ++ ) {
+    var answer = prompt(" What States have I lived in? There are 4 answers").toLowerCase();
+    //if ( stateArr.indexOf( answer ) !== -1);
+    if ( stateArr.includes( answer ) ){
+    // if ( answer === stateArr[0] || 
+    //      answer === stateArr[1] ||
+    //      answer === stateArr[2] || 
+    //      answer === stateArr[3] ){
+       tally ++
         alert('You guessed it Right.. but you did have 4 correct answers.');
         console.log(' You guessed '  + answer );
         break;
-    } else if (answer !== stateArr) { 
-        // "virginia" !== [ 'arizona', 'nevada', 'oregon', 'florida' ]
-        alert( 'Choose again please!')
-    }
+    } else {
+        alert( 'Choose again please!');
+        
 
+    }
+     console.log( 'i:' + i);
+        if (i === 5){
+        alert( 'you\'re out of guesses!');
+        }
 }
 console.log( tally );
+//
