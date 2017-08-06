@@ -1,21 +1,21 @@
 
-// alert('Welcome to my game, My name is Franklyn');
-// console.log('How much do you know about me?');
+alert('Welcome to my game, My name is Franklyn');
+console.log('How much do you know about me?');
 
-// var tally = 0
+var tally = 0
 
-// //Question 1
-// var name = prompt('What is your name?');
-// console.log('Hello ' + name);
-// alert('Hello ' + name);
+//Question 1
+var name = prompt('What is your name?');
+console.log('Hello ' + name);
+alert('Hello ' + name);
 
-// //Question 2
-// var begin = confirm('Would you like to play a game ' + name + '?');
-// while (!begin){
-//     alert('Please play ' + name); //dont need confirm, can use alert or 
-//     begin = confirm ('Do you want to play?');
-//     console.log(name + ' choose ' + begin );
-//  }
+//Question 2
+var begin = confirm('Would you like to play a game ' + name + '?');
+while (!begin){
+    alert('Please play ' + name); //dont need confirm, can use alert or 
+    begin = confirm ('Do you want to play?');
+    console.log(name + ' choose ' + begin );
+ }
 
 
 // var questionArr = ['Which do i prefer, DC or Marvel?', 'Do I like Summer or Winter better?', ' Do I use a Pc or Apple?' ];
