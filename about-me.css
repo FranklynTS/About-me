@@ -1,8 +1,16 @@
 /* style sheet  */
 
-     body{
-        color: blue;
-        background: gray;
-        font-size: 40px ;
+  h1{
+        color: black;
+       /* position: fixed;*/
 
+    }
+     body{ background: url(images/Artistic/39.jpg);
+        color: black;
+       
+       /* background: gray;
+        font-size: 40px ;*/
+
+        
      }  
+     
