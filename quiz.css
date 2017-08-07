@@ -1,0 +1,21 @@
+body{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 50px;
+    background-color: slategrey
+}
+
+h4{
+    color: blue;
+    font-size: 30px;
+    
+}
+
+ul{
+    border: 2px ridge black;
+}
+
+ol{
+    margin: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 50px; 
+
+}
