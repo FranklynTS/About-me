@@ -6,7 +6,8 @@
        /* position: fixed;*/
 
     }
-     body{ background: url(images/Artistic/39.jpg);
+     body{ 
+       background: url(images/Artistic/39.jpg);
         color: black;
      }
       p{
