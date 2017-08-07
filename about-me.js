@@ -25,7 +25,7 @@
 //   for ( var i = 0; i<3 ; i ++ ) {
 //       question( questionArr[i], correctAnsArr[i], messageArr[i] );
 
-  }
+ // }
   // Question 3 & 4 & 5
    function question (promptMessage, correctAnswer, alertMessage) {
 
