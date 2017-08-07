@@ -10,12 +10,12 @@
   alert('Hello ' + name);
 
   //Question 2
-  var begin = confirm('Would you like to play a game ' + name + '?');
-  while (!begin){
-      alert('Please play ' + name); //dont need confirm, can use alert or 
-      begin = confirm ('Do you want to play?');
-      console.log(name + ' choose ' + begin );
-  }
+//   var begin = confirm('Would you like to play a game ' + name + '?');
+//   while (!begin){
+//       alert('Please play ' + name); //dont need confirm, can use alert or 
+//       begin = confirm ('Do you want to play?');
+//       console.log(name + ' choose ' + begin );
+//   }
 
 
 //   var questionArr = ['Which do i prefer, DC or Marvel?', 'Do I like Summer or Winter better?', ' Do I use a Pc or Apple?' ];
@@ -25,7 +25,9 @@
 //   for ( var i = 0; i<3 ; i ++ ) {
 //       question( questionArr[i], correctAnsArr[i], messageArr[i] );
 
-//   }
+
+ // }
+
   // Question 3 & 4 & 5
    function question (promptMessage, correctAnswer, alertMessage) {
 
