@@ -7,12 +7,30 @@
 
     }
      body{ 
-       background: url(images/Artistic/39.JPG);
+
+        font-family: fantasy; 
+       background: url(images/Artistic/39.jpg);
+
         color: black;
      }
       p{
         font-size: 30px ;
+        background-size: cover;
       }
         
-     
-     
+       .gallery1 { 
+        border: solid 4px black;
+        margin:  15px;
+        padding: 5px;
+        text-align: center;
+        
+     } 
+   .foo {
+     display: inline-block;
+     text-align: center;
+      padding: 25px; 
+   }
+   
+    .food, .artistic, .wedding{
+      size: 20px;
+    }
