@@ -7,5 +7,16 @@ header{
 
 }
 body{
-       background-color: saddlebrown; 
+       background-color: background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(whitesmoke));
+       background-image: -webkit-linear-gradient(top, gray, white);
+       background-image: -moz-linear-gradient(top, gray, white);
+       background-image: linear-gradient(to bottom, gray, white);; 
+        border: solid 7px gray;
+        padding: 5px;
 }
+    img {
+        border: solid 2px black;
+        margin:  15px;
+        padding: 5px;
+}
+    
