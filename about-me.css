@@ -10,13 +10,13 @@
 
         font-family: fantasy; 
 
-       background: url(images/Artistic/39.JPG);
+       background: url(images/Artistic/77.JPG);
 
         color: black;
      }
       p{
         font-size: 30px ;
-        background-size: cover;
+         background-size: cover; 
       }
         
        .gallery1 { 
