@@ -6,8 +6,8 @@ header{
     color: black; 
 
 }
-body{
-       background-color: background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(whitesmoke));
+body{ 
+       background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(whitesmoke));
        background-image: -webkit-linear-gradient(top, gray, white);
        background-image: -moz-linear-gradient(top, gray, white);
        background-image: linear-gradient(to bottom, gray, white);; 

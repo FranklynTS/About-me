@@ -1,37 +1,49 @@
 /* style sheet  */
+html{
+  background-image: url(images/Artistic/103.jpg);
+  height: -webkit-fill-available;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
+}
   h1{
-        color: black;
+        color: #F15F28;
         font-size: 50px;
-       /* position: fixed;*/
+       position: fixed;
 
     }
      body{ 
 
         font-family: fantasy; 
-
-       background: url(images/Artistic/77.JPG);
-
-        color: black;
+        color: burlywood;
      }
       p{
         font-size: 30px ;
-         background-size: cover; 
       }
-        
-       .gallery1 { 
-        border: solid 4px black;
-        margin:  15px;
-        padding: 5px;
-        text-align: center;
-        
-     } 
-   .foo {
-     display: inline-block;
-     text-align: center;
-      padding: 25px; 
-   }
-   
-    .food, .artistic, .wedding{
-      size: 20px;
+      .artistic{
+        border: 3px solid black;
+        display: inline-block;
+        text-align: -webkit-center;
+        padding: 10px 10px 10px 10px;
+        margin: 340px 10px 10px 10px;
+      }
+
+      .food{
+        border: 3px solid black;
+        display: inline-block;
+        text-align: -webkit-center;
+        padding: 10px 10px 10px 10px;
+        margin: 340px 10px 10px 150px;
+      }
+      .weddings{
+        border: 3px solid black;
+        display: inline-block;
+        text-align: -webkit-center;
+        padding: 10px 10px 10px 10px;
+        margin: 340px 10px 10px 120px;
+      }
+      div.foo {
+        float: left;
+     
     }
